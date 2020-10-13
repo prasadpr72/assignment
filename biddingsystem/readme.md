@@ -17,8 +17,8 @@ Eg: user1,password,user(role)
 	admin1,password,admin(role)
 	
 Authentication supported is basic.
-<section>
-1.http://localhost:8080/v1/addBid  --->Add Build
+
+- http://localhost:8080/v1/addBid  --->Add Build
 ```
 {
     "itemCode":"A10007",
@@ -30,7 +30,7 @@ Authentication supported is basic.
 }
 ```
 
-2.http://localhost:8080/v1/updatebid/1 -->Updated Build
+- http://localhost:8080/v1/updatebid/1 -->Updated Build
 ```
  {
         "itemCode": "A10004",
@@ -41,7 +41,7 @@ Authentication supported is basic.
         "versionId": 0
  }
  ```
- 3.http://localhost:8080/v1/closebid/17
+ - http://localhost:8080/v1/closebid/17
  ```
  {
         "itemCode": "A10007",
@@ -52,8 +52,5 @@ Authentication supported is basic.
         "versionId": 0
     }
     ```
- 4.http://localhost:8080/v1/fetchBid?status=OVER   
+ - http://localhost:8080/v1/fetchBid?status=OVER   
 
-	
-
-	</section>
