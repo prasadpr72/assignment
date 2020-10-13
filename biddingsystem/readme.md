@@ -1,24 +1,25 @@
-#Bidding System
+# Bidding System
 
-##Supported Apis
-
+## Supported Apis
+```
 1.Add Bid
 2.Close bid
 3.Fetch running bids
 4.Updated bid or quoting bid
+```
 
 
-##Secuirty
+## Secuirty
 
-Uses data base authenticatio with encrypted passwords and roles assigned to each usser.
+Uses data base authentication with encrypted passwords and roles assigned to each usser.
 
 Eg: user1,password,user(role)
 	admin1,password,admin(role)
 	
 Authentication supported is basic.
-
+<section>
 1.http://localhost:8080/v1/addBid  --->Add Build
-
+```
 {
     "itemCode":"A10007",
     "bidPrice":1333.33,
@@ -27,9 +28,10 @@ Authentication supported is basic.
     "lastUpdatedBy":"Admin"
 
 }
+```
 
 2.http://localhost:8080/v1/updatebid/1 -->Updated Build
-
+```
  {
         "itemCode": "A10004",
         "bidPrice": 55555.33,
@@ -38,9 +40,9 @@ Authentication supported is basic.
         "updatedDate": null,
         "versionId": 0
  }
- 
+ ```
  3.http://localhost:8080/v1/closebid/17
- 
+ ```
  {
         "itemCode": "A10007",
         "bidPrice": 1333.33,
@@ -49,6 +51,7 @@ Authentication supported is basic.
         "updatedDate": null,
         "versionId": 0
     }
+    ```
  4.http://localhost:8080/v1/fetchBid?status=OVER   
 
 	
