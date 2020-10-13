@@ -12,9 +12,9 @@
 ## Secuirty
 
 Uses data base authentication with encrypted passwords and roles assigned to each usser.
-
-Eg: user1,password,user(role)
-	admin1,password,admin(role)
+   Eg:username|password|role
+     user1,password,user(role)
+     admin1,password,admin(role)
 	
 Authentication supported is basic.
 
@@ -52,5 +52,7 @@ Authentication supported is basic.
         "versionId": 0
     }
     ```
+    
+    
  - http://localhost:8080/v1/fetchBid?status=OVER   
 
